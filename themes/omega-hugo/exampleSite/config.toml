@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://examplesite.com"
+baseURL = "https://senegal-avenir.netlify.app/"
 title = "AVENIR"
 theme = "omega"
 # google analytics
