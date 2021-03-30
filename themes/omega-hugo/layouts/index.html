@@ -1,0 +1,1335 @@
+{{ define "main" }}
+
+{{ if site.Data.homepage.banner.enable }}
+{{ with site.Data.homepage.banner }}
+<section class="hero-slider">
+  <div class="container-fluid p-0 m-0">
+    <div class="row m-0">
+      <div class="col-12 p-0 ml-auto">
+        <div class="hero-slider-wrapper">
+          <div class="item">
+            <div class="item-image image-reveal" style="animation-delay: 1s;">
+              <img src="{{ .image | absURL }}" alt="slider-image">
+            </div>
+            <div class="content">
+              <h2>
+                <span class="rev">
+                  {{.title | markdownify}}
+                </span>
+              </h2>
+              <h3>{{ .content | markdownify }}</h3>
+              {{ if .button.enable }}
+              {{ with .button }}
+              <a href="{{ .link | absURL }}" class="hero-btn btn page-scroll">{{.label}}</a>
+              {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center">
+        <div class="scroll">
+          <h6>SCROLL</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.mission.enable }}
+{{ with site.Data.homepage.mission }}
+<section class="mission" id="mission">
+  <div class="bg">
+    <img src="{{`images/section-bg.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="right-shape">
+    <img src="{{`images/right-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p>{{ .content | markdownify }}</p>
+          <div class="video image-reveal">
+            <a class="video-play"
+              data-video="https://player.vimeo.com/video/{{.video_id}}?">
+              <img src="{{ .video_thumb | absURL }}" class="img-fluid" alt="video-thumb">
+              <i class="fa fa-play"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.intro.enable }}
+{{ with site.Data.homepage.intro }}
+<section class="products">
+  <div class="bg">
+    <img src="{{`images/section-bg-3.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="left-shape">
+    <img src="{{`images/left-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.map.enable }}
+{{ with site.Data.homepage.map }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/Admins.html" width="1300" height="800">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.avena.enable }}
+{{ with site.Data.homepage.avena }}
+<section class="mission">
+  <div class="bg">
+    <img src="{{`images/section-bg-1.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="right-shape">
+    <img src="{{`images/right-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.intropop.enable }}
+{{ with site.Data.homepage.intropop }}
+<section class="products">
+   <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.mapop.enable }}
+{{ with site.Data.homepage.mapop }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/population.html" width="100%" height="700">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.econ.enable }}
+{{ with site.Data.homepage.econ }}
+<section class="products">
+  <div class="bg">
+    <img src="{{`images/section-bg-4.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="left-shape">
+    <img src="{{`images/left-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.econex.enable }}
+{{ with site.Data.homepage.econex }}
+<section class="products">
+   <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.mapec.enable }}
+{{ with site.Data.homepage.mapec }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/livelihoods.html" width="100%" height="700">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.povemploy.enable }}
+{{ with site.Data.homepage.povemploy }}
+<section class="mission">
+  <div class="bg">
+    <img src="{{`images/section-bg-5.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="right-shape">
+    <img src="{{`images/right-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.mappu.enable }}
+{{ with site.Data.homepage.mappu }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/Poverty-n-unemployment.html" width="100%" height="700">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.clim.enable }}
+{{ with site.Data.homepage.clim }}
+<section class="products">
+  <div class="bg">
+    <img src="{{`images/section-bg-6.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="left-shape">
+    <img src="{{`images/left-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.climex.enable }}
+{{ with site.Data.homepage.climex }}
+<section class="products">
+   <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.mapclim.enable }}
+{{ with site.Data.homepage.mapclim }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/Clima.html" width="100%" height="700">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.vision.enable }}
+{{ with site.Data.homepage.vision }}
+<section class="vision" id="vision">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section | markdownify }}</span>
+        </div>
+        <div class="visions">
+          {{ range .vision_item }}
+          <div class="vision-item">
+            <div class="image image-reveal">
+              <img src="{{ .image | absURL }}" class="img-fluid" alt="vision-thumb">
+            </div>
+            <div class="text-content">
+              <h3>{{ .title | markdownify }}</h3>
+              <p>{{ .content | markdownify}}</p>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.agric.enable }}
+{{ with site.Data.homepage.agric }}
+<section class="mission">
+  <div class="bg">
+    <img src="{{`images/section-bg-7.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="right-shape">
+    <img src="{{`images/right-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.mapag.enable }}
+{{ with site.Data.homepage.mapag }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/CropPatureland.html" width="100%" height="700">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.agws.enable }}
+{{ with site.Data.homepage.agws }}
+<section class="products">
+  <div class="bg">
+    <img src="{{`images/section-bg-8.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="left-shape">
+    <img src="{{`images/left-shape.png` | absURL}}" class="img-fluid" alt="left-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section | markdownify }}</span>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="text-block">
+          <h2><span class="rev">{{ .title | markdownify }}</span>
+          </h2>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.wsmap.enable }}
+{{ with site.Data.homepage.wsmap }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/Water-scarcity.html" width="100%" height="700">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.agld.enable }}
+{{ with site.Data.homepage.agld }}
+<section class="products">
+   <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.ldmap.enable }}
+{{ with site.Data.homepage.ldmap }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/land_degradn.html" width="100%" height="700">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.agirr.enable }}
+{{ with site.Data.homepage.agirr }}
+<section class="products">
+  <div class="bg">
+    <img src="{{`images/section-bg-9.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="left-shape">
+    <img src="{{`images/left-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.irrmap.enable }}
+{{ with site.Data.homepage.irrmap }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/Irrigated-land.html" width="100%" height="700">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.agbz.enable }}
+{{ with site.Data.homepage.agbz }}
+<section class="mission">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p><i>{{ .content | markdownify }}</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.agribz.enable }}
+{{ with site.Data.homepage.agribz }}
+<section class="mission">
+  <div class="bg">
+    <img src="{{`images/section-bg-10.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="right-shape">
+    <img src="{{`images/right-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.agbzmap.enable }}
+{{ with site.Data.homepage.agbzmap }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/markets.html" width="100%" height="700">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.product.enable }}
+{{ with site.Data.homepage.product }}
+<section class="products" id="products">
+  <div class="left-shape">
+    <img src="{{`images/left-shape.png` | absURL}}" class="img-fluid" alt="left-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section | markdownify }}</span>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="text-block">
+          <h2><span class="rev">{{ .title | markdownify }}</span>
+          </h2>
+          <p><i>{{ .content | markdownify }}</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid p-0">
+    <div class="row m-0">
+      <div class="col-lg-10 ml-auto p-0">
+        <div class="product-slider-wrapper">
+          {{ range .product_item }}
+          <div class="product-item">
+            <img src="{{ .image | absURL }}" alt="product-image">
+            <div class="overlay">
+              <div class="content">
+                <h5>{{ .title | markdownify }}</h5>
+                <p>{{ .content | markdownify }}</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.component.enable }}
+{{ with site.Data.homepage.component }}
+<section class="mission">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p><i>{{ .content | markdownify }}</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.landuse.enable }}
+{{ with site.Data.homepage.landuse }}
+<section class="products">
+  <div class="bg">
+    <img src="{{`images/section-bg-11.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="left-shape">
+    <img src="{{`images/left-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.lumap.enable }}
+{{ with site.Data.homepage.lumap }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/land-use-and-protection.html" width="1300" height="800">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.watrsoc.enable }}
+{{ with site.Data.homepage.watrsoc }}
+<section class="mission">
+  <div class="bg">
+    <img src="{{`images/section-bg-12.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="right-shape">
+    <img src="{{`images/right-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p><i>{{ .content | markdownify }}</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.watmap.enable }}
+{{ with site.Data.homepage.watmap }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/irrigationwater.html" width="1300" height="800">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.climchallng.enable }}
+{{ with site.Data.homepage.climchallng }}
+<section class="mission">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p><i>{{ .content | markdownify }}</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.tprmap.enable }}
+{{ with site.Data.homepage.tprmap }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/Temppptime.html" width="1300" height="800">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{ if site.Data.homepage.tpdrot.enable }}
+{{ with site.Data.homepage.tpdrot }}
+<section class="products">
+  <div class="bg">
+    <img src="{{`images/section-bg-13.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="left-shape">
+    <img src="{{`images/left-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p><i>{{ .content | markdownify }}</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.tpdmap.enable }}
+{{ with site.Data.homepage.tpdmap }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/climatic-challenge.html" width="100%" height="700">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.echal.enable }}
+{{ with site.Data.homepage.echal }}
+<section class="mission">
+  <div class="bg">
+    <img src="{{`images/section-bg-14.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="right-shape">
+    <img src="{{`images/right-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p><i>{{ .content | markdownify }}</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.econmap.enable }}
+{{ with site.Data.homepage.econmap }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/Acess-to-credit.html" width="1300" height="800">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.sochal.enable }}
+{{ with site.Data.homepage.sochal }}
+<section class="products">
+  <div class="bg">
+    <img src="{{`images/section-bg-15.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="left-shape">
+    <img src="{{`images/left-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p><i>{{ .content | markdownify }}</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.socmap.enable }}
+{{ with site.Data.homepage.socmap }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/Social-challenge.html" width="1300" height="800">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.ypchal.enable }}
+{{ with site.Data.homepage.ypchal }}
+<section class="mission">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p><i>{{ .content | markdownify }}</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.unemap.enable }}
+{{ with site.Data.homepage.unemap }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/effectsonyouths.html" width="100%" height="700">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.ypchalim.enable }}
+{{ with site.Data.homepage.ypchalim }}
+<section class="mission">
+  <div class="bg">
+    <img src="{{`images/section-bg-16.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p><i>{{ .content | markdownify }}</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.ineqmap.enable }}
+{{ with site.Data.homepage.ineqmap }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/genderinequality.html" width="100%" height="700">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.vuln.enable }}
+{{ with site.Data.homepage.vuln }}
+<div class="contact" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{ .section | markdownify }}</span>
+        </div>
+      </div>
+      <div class="col-lg-7 ml-auto">
+        <div class="text-block">
+          <h2><span class="rev">{{ .title | markdownify }}</span></h2>
+          <p>{{.content | markdownify}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.cropsuit.enable }}
+{{ with site.Data.homepage.cropsuit }}
+<section class="mission">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p><i>{{ .content | markdownify }}</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.suitmap.enable }}
+{{ with site.Data.homepage.suitmap }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/cr_suitability.html" width="1300" height="800">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.cropsens.enable }}
+{{ with site.Data.homepage.cropsens }}
+<section class="mission">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p><i>{{ .content | markdownify }}</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.sensmap.enable }}
+{{ with site.Data.homepage.sensmap }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/sensitiviti.html" width="1300" height="800">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.cropvulner.enable }}
+{{ with site.Data.homepage.cropvulner }}
+<section class="mission">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p><i>{{ .content | markdownify }}</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.cvulnmap.enable }}
+{{ with site.Data.homepage.cvulnmap }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/Vulnerabiliti.html" width="1300" height="800">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.vulner.enable }}
+{{ with site.Data.homepage.vulner }}
+<section class="mission">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p><i>{{ .content | markdownify }}</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.tvulnmap.enable }}
+{{ with site.Data.homepage.tvulnmap }}
+<section class="mission">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="leaflet">
+          <iframe seamless src= "leaflet/Climate_Vulnerability.html" width="1300" height="800">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.concl.enable }}
+{{ with site.Data.homepage.concl }}
+<section class="mission">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{.section}}</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <p><i>{{ .content | markdownify }}</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if site.Data.homepage.call_to_action.enable }}
+{{ with site.Data.homepage.call_to_action }}
+<footer class="footer">
+	<div class="call-to-action text-center">
+		<h2>{{ .title | markdownify }}</h2>
+		<p><i>{{ .content | markdownify }}</i></p>
+	</div>
+</footer>
+{{end}}
+{{end}}
+
+{{ end }}

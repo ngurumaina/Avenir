@@ -1,0 +1,60 @@
+baseURL: https://examplesite.com
+title: AVENIR
+theme: omega-hugo
+googleAnalytics: ''
+markup:
+  goldmark:
+    renderer:
+      unsafe: yes
+menu:
+  main:
+    - URL: mission
+      name: Introduction
+      pre: '#'
+      weight: 1
+    - URL: vision
+      name: Senegal Agriculture
+      pre: '#'
+      weight: 2
+    - URL: products
+      name: AVENIR
+      pre: '#'
+      weight: 3
+    - URL: contact
+      name: Vulnerability
+      pre: '#'
+      weight: 4
+params:
+  author: Themefisher
+  contact_info: 1001 Brickell bay <br>Dr. Miami, <br>FL 33131
+  cookies:
+    enable: yes
+    expire_days: 2
+  description: This is meta description
+  logo: images/logo.png
+  logo_width: 120px
+  map:
+    enable: yes
+    gmap_api: https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw
+    map_center_lat: '25.773606'
+    map_center_lng: '-80.732655'
+    map_marker: images/map-marker.png
+    map_position_lat: '25.7635916'
+    map_position_lng: '-80.1937595'
+  preloader: yes
+  social:
+    - icon: fa-facebook
+      link: '#'
+      title: facebook
+    - icon: fa-twitter
+      link: '#'
+      title: twitter
+    - icon: fa-instagram
+      link: '#'
+      title: instagram
+    - icon: fa-github
+      link: '#'
+      title: github
+    - icon: fa-linkedin
+      link: '#'
+      title: linkedin

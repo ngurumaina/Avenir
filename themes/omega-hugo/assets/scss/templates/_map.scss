@@ -1,0 +1,38 @@
+.map{
+    position: relative;
+    padding: 185px 0 170px 0;
+    @include desktop {
+        padding: 100px 0;
+    }
+.mission-content{
+    margin-left: 130px;
+    position: relative;
+    z-index: 2;
+    @include desktop{
+        margin-left: 0;
+    }
+    .leaflet{
+        position: relative;
+        margin-top: 85px;
+        margin-left: 200px;
+        overflow: hidden;
+        @include desktop{
+            margin-left: 100px;
+        }
+        @include tablet{
+            margin-top: 50px;
+            margin-left: 0;
+        }
+
+        iframe{
+            width: 100%;
+            min-height: 500px;
+            border: none;
+            background: $black;
+            padding: 10px 40px;
+            @include desktop-lg{
+                min-height: 350px;
+            }
+        }
+    }
+}
