@@ -558,7 +558,7 @@ tvulnmap:
 #################### Conclusion #####################
 concl:
   enable : true
-  title : ""
+  title : "Recommendations"
   content : "The adaptive capacity for the farming population, can be enhanced through improving literacy rates, access to 
   educational institutions and health facilities; improving nutrition outcomes (stunting, wasting and underweight), and developing 
   marketing, transportation and irrigation infrastructure. Priority areas for improving crop vulnerability are the eastern, south 
