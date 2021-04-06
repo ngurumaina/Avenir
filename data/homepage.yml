@@ -534,7 +534,7 @@ cvulnmap:
 ####################  vulnerability #####################
 vulner:
   enable : true
-  title : "Vulnerability climate change"
+  title : "Vulnerability to climate change"
   content : "Crop vulnerability in 2030s under RCP 4.5 is greatest in the regions of Kaffrine, Tambacounda, Sedhiou, 
   Kolda and Kedougou which are mainly in the central, south and south-eastern parts of the country. There are also other 
   specific Arrondissements with high vulnerability elsewhere across the country. On the other hand, vulnerability is lowest 
@@ -558,12 +558,41 @@ tvulnmap:
 #################### Conclusion #####################
 concl:
   enable : true
-  title : "Conclusion"
+  title : ""
   content : "The adaptive capacity for the farming population, can be enhanced through improving literacy rates, access to 
   educational institutions and health facilities; improving nutrition outcomes (stunting, wasting and underweight), and developing 
   marketing, transportation and irrigation infrastructure. Priority areas for improving crop vulnerability are the eastern, south 
   and south eastern areas of Senegal, which include Kaffrine, Tambacounda, Sedhiou, Kolda and Kedougou regions."
+
+
   
+#################### Avenir action to acheiving goals 1 #####################
+action1:
+  enable : true
+  title : "Avenir action to acheiving its goals"
+  content : "Component 1: Increase socio-economic empowerment of women and young people.<br><br>
+  a; To increase the capacity of women and youth to profitably operate agribusinesses in selected climate-change adapted value chains, entrepreneurship training and coaching on ‘farming as a business’ will be offered. The women and youth will also be linked to appropriate financial products and services for their agricultural and irrigation needs.
+<br>b; In order to improve market access for women and youth, market linkages will be facilitated by identifying and building partnerships with companies and value chain actors.
+<br>c; In order to enhance leadership capacity of women and youth to respond to climate change impacts, the project will identify and work with champions and women/youth role models who promote women and youth leaders in their communities. 
+"
+
+#################### Avenir action to acheiving goals 2#####################
+action2:
+  enable : true
+  title : ""
+  content : "<br><br>Component 2: Promote sustainable and innovative intensification of irrigated and climate-change adapted crops.<br><br>
+  a; Training will be conducted through various channels such as demonstration sites, service providers, extension agents, radio, and social media. with agricultural and irrigation input and service providers that promote sustainable technologies and techniques, improve yields while protecting or regenerating the environment, and enhance crop resilience to weather changes in order to improve access to agricultural and irrigation inputs, technologies and techniques that promote sustainable intensification of selected climate-change-adapted crops.
+<br>b; The project will identify cost-effective and climate-adapted agriculture and irrigation techniques and technologies for adoption so as to increase the capacity of agricultural and irrigation input and service providers to provide products and services that promote sustainable intensification of selected climate-change-adapted crops to farmers.   
+"
+
+#################### Avenir action to acheiving goals 3#####################
+action3:
+  enable : true
+  title : ""
+  content : "<br>Component 3: Improved, sustainable and equitable local governance and territorial management of water resources.<br><br>
+  a; Training and dialogue will be done to increase the capacities of local/territorial actors (government, civic groups, market actors) to manage water resources sustainably and equitably. Market actors will be engaged and incentivized to adopt and scale-up sustainable and equitable technologies for improved land and water management. Smart incentives, business case development and demonstrations will be used to promote community uptake of new technologies for improved, sustainable and equitable management of water resources that considers both socioeconomic and biophysical aspects. 
+<br>b; The project will strengthen IWUAs for the operations and maintenance of community-owned or managed irrigation schemes by using collected user fees or service charges. This will increase the capacity of women and youth, to manage water resources.
+"
 ################### call to action #################
 call_to_action:
   enable : true
