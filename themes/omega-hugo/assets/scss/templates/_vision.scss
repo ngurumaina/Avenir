@@ -43,7 +43,7 @@
     position: relative;
     z-index: 6;
     &::before{
-        content: 'MADE THINGS';
+        content: 'AVENIR SENEGAL';
         font-family: $secondary-font;
         position: absolute;
         top: 18%;
@@ -102,14 +102,14 @@
                 width: 100%;
             }
             &:after{
-                background: #0a0f61;
+                background: #f9d71c;
             }
         }
         .text-content{
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
-            left: 2%;
+            transform: translateY(-54%);
+            left: 1%;
             h3{
                 margin-bottom: 20px;
                 text-transform: capitalize;

@@ -9264,11 +9264,11 @@ li.fancybox-thumbs-loading {
 /*=== MEDIA QUERY ===*/
 @font-face {
   font-family: 'bebas_neue_regular';
-  src: url("../fonts/bebasneue_regular-webfont.woff2") format("woff2"), url("../fonts/bebasneue_regular-webfont.woff") format("woff"); }
+  src: url("../fonts/roboto-v27-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v27-latin-regular.woff") format("woff"); }
 
 @font-face {
   font-family: 'butlerbold';
-  src: url("../fonts/butler_bold-webfont.woff2") format("woff2"), url("../fonts/butler_bold-webfont.woff") format("woff"); }
+  src: url("../fonts/roboto-v27-latin-900.woff2") format("woff2"), url("../fonts/roboto-v27-latin-900.woff") format("woff"); }
 
 body {
   line-height: 1.5;
@@ -9293,7 +9293,7 @@ label {
   margin-bottom: 5px; }
 
 body {
-  background: #07630a; }
+  background: #065c08; }
 
 .section {
   padding: 100px 0; }
@@ -9540,7 +9540,7 @@ body {
       .hero-slider-wrapper .item .content h2 {
         font-weight: 600;
         line-height: 110px;
-        font-size: 80px;
+        font-size: 50px;
         letter-spacing: 1px;
         line-height: 1;
         margin-bottom: 20px; }
@@ -9548,12 +9548,12 @@ body {
           clip-path: inset(0 100% 0 0); }
         @media (max-width: 1200px) {
           .hero-slider-wrapper .item .content h2 {
-            font-size: 60px;
+            font-size: 50px;
             line-height: 70px;
             letter-spacing: 1px; } }
         @media (max-width: 767px) {
           .hero-slider-wrapper .item .content h2 {
-            font-size: 35px;
+            font-size: 20px;
             line-height: 40px; } }
       .hero-slider-wrapper .item .content h3 {
         margin-bottom: 95px;
@@ -9572,7 +9572,7 @@ body {
             letter-spacing: 1px;
             margin-bottom: 30px; } }
       .hero-slider-wrapper .item .content .hero-btn {
-        padding: 25px 50px;
+        padding: 25px 25px;
         font-weight: 600;
         color: #fff;
         border-radius: 0;
@@ -9821,7 +9821,7 @@ body {
   position: relative;
   z-index: 6; }
   .visions::before {
-    content: 'MADE THINGS';
+    content: 'AVENIR SENEGAL';
     font-family: "bebas_neue_regular";
     position: absolute;
     top: 18%;
@@ -9873,12 +9873,12 @@ body {
       .visions .vision-item .image img {
         width: 100%; }
       .visions .vision-item .image:after {
-        background: #0a0f61; }
+        background: #f9d71c; }
     .visions .vision-item .text-content {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
-      left: 2%; }
+      transform: translateY(-54%);
+      left: 1%; }
       .visions .vision-item .text-content h3 {
         margin-bottom: 20px;
         text-transform: capitalize;

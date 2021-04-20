@@ -9,11 +9,11 @@ markup:
 menu:
   main:
     - URL: mission
-      name: Introduction
+      name: INTRODUCTION
       pre: '#'
       weight: 1
     - URL: vision
-      name: Senegal Agriculture
+      name: SENEGAL AGRICULTURE
       pre: '#'
       weight: 2
     - URL: products
@@ -21,7 +21,7 @@ menu:
       pre: '#'
       weight: 3
     - URL: contact
-      name: Vulnerability
+      name: VULNERABILITY
       pre: '#'
       weight: 4
 params:

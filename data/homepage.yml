@@ -1,8 +1,8 @@
 #################### Banner #####################
 banner:
   enable : true
-  title : "Avenir"
-  content : "Adaptation and Valorization of Entrepreneurship in Irrigated Agriculture."
+  title : "AVENIR"
+  content : "ADAPTATION AND VALORIZATION OF ENTREPRENEURSHIP IN IRRIGATED AGRICULTURE."
   image : "images/hero-image/avenir-hero1.jpg"
   button:
     enable : true
@@ -13,7 +13,7 @@ banner:
 mission:
   enable : true
   title : "Introduction"
-  section : "Introduction"
+  section : "INTRODUCTION"
   content : "Senegal has over 19 million ha of land of which only 3.9 million ha is suitable for arable crops while the rest is undeveloped bush and arid areas used for livestock grazing (Alessandro et al., 2015). Out of the arable land, 40% is constantly cultivated with around 10% of the cultivated area receiving less than 500 mm of rainfall. This limits crop production."
   video_thumb: "images/video-thumb.jpg"
   video_id: "307577747"
@@ -39,7 +39,7 @@ map:
 avena:
   enable : true
   title : "THE SOLUTION"
-  section : "Solution"
+  section : "SOLUTION"
   content : "<br> To solve these impediments, MEDA and CIAT therefore partnered to implement the AVENIR project with an aim of improving the socio-economic well-being and resilience of farming households with an emphasis on women and young people, in Sedhiou and Tambacounda.
 This will be attained through: <br> 
 * Increasing socio-economic empowerment of women and youth;<br> 
@@ -51,10 +51,10 @@ This will be attained through: <br>
 intropop:
   enable : true
   title : ""
-  content : "<br> With an area of 197,000 sq. km. and a population of about 16,619,225 million as of 2019, Senegal is the <br>
-  fourth-largest economy in West Africa driven by mining, construction, tourism, fisheries and <br>
+  content : "<br> With an area of 197,000 sq. km. and a population of about 16,619,225 million as of 2019, Senegal is the 
+  fourth-largest economy in West Africa driven by mining, construction, tourism, fisheries and 
   agriculture, the primary sources of employment. <br>
-  The country consists of rolling sandy plains rising to foothills in the southeast. The highest point in <br>
+  The country consists of rolling sandy plains rising to foothills in the southeast. The highest point in 
   Senegal is near Nepen Diakha at 584 meters. The Senegal River forms the northern border."
 
 #################### pop map #####################
@@ -65,12 +65,12 @@ mapop:
 econ:
   enable : true
   title : "Economy"
-  content : "According to the African development bank (2019), Senegal Real GDP growth has been above 6% on <br> 
-  average since 2015, propelled by the Plan for an Emerging Senegal (2014-18). Growth dropped to 6.0% <br>
-  in 2019 from 6.7% in 2018. Public investment in infrastructure, agriculture, and energy kept the fiscal <br>
-  deficit at 3.6% of GDP in 2018 and 2019. Inflation in 2019 remained low at 0.2%. Rising oil prices and <br>
+  content : "According to the African development bank (2019), Senegal Real GDP growth has been above 6% on
+  average since 2015, propelled by the Plan for an Emerging Senegal (2014-18). Growth dropped to 6.0% 
+  in 2019 from 6.7% in 2018. Public investment in infrastructure, agriculture, and energy kept the fiscal 
+  deficit at 3.6% of GDP in 2018 and 2019. Inflation in 2019 remained low at 0.2%. Rising oil prices and 
   equipment imports increased the current account deficit in 2019 to 8.8%. This is projected to rise to 9.7%
-  in 2020 and 9.8% in 2021. Real GDP was expected to reach 6.3% in 2020 and 6.8% in 2021 (AFDB, 2019) <br>
+  in 2020 and 9.8% in 2021. Real GDP was expected to reach 6.3% in 2020 and 6.8% in 2021 (AFDB, 2019) 
   before covid-19 but has since been revised to 3.1% in 2020."
 
 #################### Economy drives #####################
@@ -89,11 +89,11 @@ povemploy:
   enable : true
   title : "Poverty and unemployment"
   section : ""
-  content : "The National poverty as measured in 2011 was at 46.7% (national poverty line) and 38% using the <br>
+  content : "The National poverty as measured in 2011 was at 46.7% (national poverty line) and 38% using the 
   international poverty line (US$1.9 PPP).<br>
-  <br> The youth unemployment rate is high. This is driven by the weak labour force participation of women <br>
-  and the entry of young people to the labour force (AFDB, 2019) which is at 18% with every year seeing <br> 
-  160,000 youths entering the job market. This has resulted in high Rural unemployment of 31% which <br>
+  <br> The youth unemployment rate is high. This is driven by the weak labour force participation of women 
+  and the entry of young people to the labour force (AFDB, 2019) which is at 18% with every year seeing  
+  160,000 youths entering the job market. This has resulted in high Rural unemployment of 31% which 
   contributes to migration and rural exodus."
   
 #################### poverty unemployment map #####################
@@ -104,8 +104,8 @@ mappu:
 clim:
   enable : true
   title : "Climate"
-  content : "There is a local tropical climate with a dry and a rainy season. From December to April, the dry season <br>
-  has hot, harmattan wind while most of the rainfall occurs from June to October. Inland temperatures<br>
+  content : "There is a local tropical climate with a dry and a rainy season. From December to April, the dry season
+  has hot, harmattan wind while most of the rainfall occurs from June to October. Inland temperatures
   are higher than along the coast. 
   For example, when Dakar is 23.2 C, Tambacounda is 32.7 C and temperatures here can reach as high as 54 C 
 especially on the border with Mali. <br> Rainfall increases substantially farther south, exceeding 
@@ -135,7 +135,7 @@ mapclim:
 #################### Senegal Agriculture #####################
 vision:
   enable : true
-  section : "Agriculture"
+  section : "AGRICULTURE"
   vision_item:
   - title : "Introduction"
     image : "images/vision/vision-01.jpg"
@@ -153,20 +153,19 @@ vision:
     
   - title : "Challenges in agriculture"
     image : "images/vision/vision-03.jpg"
-    content : "The vast majority of crops are rain-fed, making water availability one <br> 
+    content : "The vast majority of crops are rain-fed, making water availability one  
     of the country's biggest agricultural challenges.<br> Other challenges include: <br>
     * Reduced soil fertility<br>
     * Deforestation leading to land degradation"
 
   - title : "irrigation"
     image : "images/vision/vision-04.jpg"
-    content : "senegal's irrigation subsector is divided into two farming systems:
-irrigated cereals dominated by paddy rice, intercropped with maize and
+    content : "Senegal's irrigation subsector is divided into two farming systems;
+Irrigated cereals dominated by paddy rice, intercropped with maize and
 sorghum; and smallholder irrigated horticulture with a large range of
 vegetables, dominated by onion and tomato.<br>
 Small-scale irrigation provides 90 percent of the vegetables sold in local market with 
-rice and vegetables dominating the small irrigated crop sector and commercial farmers 
-focusing more on vegetables, fruit, and sugarcane."
+rice and vegetables dominating the small irrigated crop sector"
 
 
 ####################### Agriculture ####################
@@ -198,7 +197,7 @@ mapag:
 agws:
   enable : true
   title : "Challenges in agriculture"
-  content : "a. water scarcity <br>
+  content : "a. Water scarcity <br>
   The vast majority of crops are rain-fed, making water availability one of the country's biggest agricultural challenges.<br>
   <br>In the Senegal River Basin, water is shared amongst a range of livelihood-related sectors in the region: agricultural 
   and agro-pastoral zones, fisheries zones, municipal water supply and hydropower. <br> Water withdrawals along the Senegal River
@@ -213,7 +212,7 @@ wsmap:
 agld:
   enable : true
   title : ""
-  content : "b. land degradation<br>
+  content : "b. Land degradation<br>
   Groundnut production has reduced soil fertility to the extent that farmers are moving further inland as 
   they look for new land for cultivation.<br> The increasing demand for land and fuel woods has contributed 
   to deforestation with the World Bank estimating that, 450 square km of forests are lost annually, predominantly 
@@ -255,8 +254,8 @@ agbz:
 agribz:
   enable : true
   title : ""
-  section : "Agribusiness"
-  content : " <br><br><br>The horticultural sub-sector presents the main hope of diversifying Senegal’s agricultural export structure. 
+  section : "AGRIBUSINESS"
+  content : " <br>The horticultural sub-sector presents the main hope of diversifying Senegal’s agricultural export structure. 
  Despite Senegal’s huge potential in horticultural exports, market opportunities at national, regional and 
  international levels remain under-exploited. <br><br> In Senegal, production and marketing assets (e.g. land, technology, 
  finance, business know-how, human networks) are unevenly distributed across different types of producers, ranging 
@@ -281,7 +280,7 @@ product:
   product_item:
   - title : "Introduction"
     image : "images/product/product-03.jpg"
-    content : "Avenir aims at improving the socio-economic well-being and resilience of farming households, 
+    content : "AVENIR aims at improving the socio-economic well-being and resilience of farming households, 
     with an emphasis on women and young people, in in the regions of Tambacounda and Sedhiou, Senegal."
     project_url : ""
     
@@ -290,9 +289,7 @@ product:
     content : "Sédhiou Region covers an area of 7,340 km² with three administrative departments 
     (Bounkiling, 2,889 km²; Sédhiou, 2,725 km² and Goudomp, 1,725 km. The climate is characterized by the African 
     monsoon with an average annual rainfall >800 mm. The region is rich in forest 
-    resources and includes 12 forest reserves with a total surface of 84,500 ha. Rainfed agriculture 
-    is done by farmers on highlands and main crops are finger millet, sorghum, maize and rice while irrigated agriculture
-    consists mainly of rice. Tree fruits are mainly mangoes and cashew plantations."
+    resources and includes 12 forest reserves with a total surface of 84,500 ha."
     project_url : ""
     
   - title : "Tambacounda"
@@ -300,8 +297,7 @@ product:
     content : "Tambacounda Region covers an area of 42,364 km² withfour administrative departments
     (Bakel, 6707 km²; Goudiry, 15,658 km²; Koumpentoum, 6,888km2, Tambacounda, 13,372 km². 
     The prevailing climate is known as a local steppe climate with an average annual rainfall of 786mm. 
-    The low population density in this zone allows for extensive agriculture purposes and transhumant animal rearing. 
-    The zone has the potential for mining."
+    Animal rearing and mining are the common economic activities."
     project_url : ""
 
 #################### Project components #####################
@@ -339,9 +335,9 @@ watrsoc:
   section : ""
   content : "There is inadequate availability of drinking water in Sedhiou and Tambacounda.
 Most of the population uses water from the wells, which unfortunately is not treated and not drinkable. 
-All of these factors cause health problems. <br><br><br><br><br><br>
+All of these factors cause health problems. <br><br><br><br>
 Below-average rainfall has restricted access to safe drinking water and reduced forage for livestock, 
-disrupting livelihood activities and deteriorating food security and nutrition conditions.<br><br>The groundwater 
+disrupting livelihood activities and deteriorating food security and nutrition conditions.<br><br><br><br>The groundwater 
 in the Tambacounda region of the southern part of the country is
 difficult to reach due to complex hydro-geological conditions, but may be reached
 through drilling at 40 m depth and beyond."
@@ -396,14 +392,14 @@ tpdmap:
 echal:
   enable : true
   title : "Economic challenges"
-  content : "<br>In Sedhiou, Agriculture plays a major role in running the economy while in Tambacounda, agriculture and mining are 
+  content : "<br><br>In Sedhiou, Agriculture plays a major role in running the economy while in Tambacounda, agriculture and mining are 
   the main sectors. However, 60.5% of the population in Tambacounda and 67% of the population in Sedhiou are poor.<br>
   In Sédhiou, lack of infrastructure prevent producers from expanding their market across the Country limiting the movement of 
   agricultural products. In addition to this, poor quality of roads and bridges is a concern for the economy of this region. 
   In Tambacounda, poor infrastructure limits access to markets or water.<br>
   In Senegal, there is low access to credit by small scale farmers due to, fear of default risk due to climate change, disbursement delays, 
   lengthy procedures, high travel costs to financial institutions, high application fees, high interest rates & guarantees, 
-  lack of irrigation water and high account maintenance fees.<br> Women are reported to have less land to cultivate than men, 
+  lack of irrigation water and high account maintenance fees.<br><br>Women are reported to have less land to cultivate than men, 
   which inhibits their production and access to credit while youth are seen as risky targets to offer credit as they are often unemployed, lack a guarantee and might disappear with the loan to another country"
   
   
@@ -471,7 +467,7 @@ ineqmap:
 ###################### Vulnerability ####################
 vuln:
   enable : true
-  section : "Vulnerability"
+  section : "VULNERABILITY"
   title : "climate vulnerability"
   image : "images/map-bg.jpg"
   content : "The IPCC defines vulnerability as the extent to which a natural or social system is susceptible to sustaining 
@@ -518,7 +514,7 @@ sensmap:
 #################### crops vulnerability #####################
 cropvulner:
   enable : true
-  title : "Vulnerability of Crops to climate change"
+  title : "Crops Vulnerability to climate change"
   content : "All the crop show most vulnerability towards the south eastern region of Senegal and some areas to the east and 
   south especially in the regions of Tambacounda, Kaffrine, Sedhiou, Kolda and Kedougou. There is high vulnerability 
   for baobab tree, ditakh and madd to the north and cashew, Okra, mango, onion, pepper and rice to the north east. 
@@ -589,7 +585,7 @@ action2:
 action3:
   enable : true
   title : ""
-  content : "<br>Component 3: Improved, sustainable and equitable local governance and territorial management of water resources.<br><br>
+  content : "<br>Component 3: Improved, sustainable and equitable local governance and territorial management of water resources.<br>
   a; Training and dialogue will be done to increase the capacities of local/territorial actors (government, civic groups, market actors) to manage water resources sustainably and equitably. Market actors will be engaged and incentivized to adopt and scale-up sustainable and equitable technologies for improved land and water management. Smart incentives, business case development and demonstrations will be used to promote community uptake of new technologies for improved, sustainable and equitable management of water resources that considers both socioeconomic and biophysical aspects. 
 <br>b; The project will strengthen IWUAs for the operations and maintenance of community-owned or managed irrigation schemes by using collected user fees or service charges. This will increase the capacity of women and youth, to manage water resources.
 "
